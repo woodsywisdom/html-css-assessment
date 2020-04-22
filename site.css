@@ -1,0 +1,114 @@
+html {
+  background-color: #e5e5e5;
+}
+
+form {
+  width: 600px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+
+label {
+  grid-column: 1/2;
+  justify-self: end;
+}
+
+input
+textarea,
+button {
+  grid-column: 2/3;
+}
+
+
+
+.card {
+  display: grid;
+  box-sizing: border-box;
+  width: 344px;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-template-rows: 194px 70px 1fr;
+  grid-template-columns: 70px 1fr;
+  border-radius: 5px;
+  margin: 0 auto;
+  overflow: hidden;
+  
+  background-color: white;
+
+
+}
+
+.card:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, .3);
+}
+
+.card_image {
+  height: 194px;
+  width: 344px;
+  grid-row: span 1;
+  grid-column: span 2;
+
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  grid-row: 2 / 3;
+  grid-column: span 1;
+  justify-self: center;
+  align-self: center;
+
+}
+
+.title {
+  color: #000;
+  font-size: 22px;
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
+  margin-top: 15px;
+
+}
+
+.secondary_text {
+  color: #232f34;
+  font-size: 11px;
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
+  margin-top: 44px;
+
+}
+
+.body_text {
+  color: #232f34;
+  font-size: 11px;
+  grid-row: 3 / 4;
+  grid-column: span 2;
+  padding: 16px;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+  form {
+    width: auto;
+    grid-template-columns: 1fr;
+  }
+
+  label {
+    grid-column: 1/2;
+    justify-content: flex-end;
+  }
+
+  input
+  textarea,
+  button {
+    grid-column: 1/2;
+  }
+
+}

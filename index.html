@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>App Academy HTML/CSS Assessment</title>
+  <link href="site.css" rel="stylesheet">
+</head>
+
+<body>
+  <form action="/pets" method="post">
+
+    <label for="pet_name">Name</label>
+    <input type="text" id="name" name="pet_name">
+
+    <label for="type">Type</label>
+    <select id="type" name="pet_type">
+      <option value="cat">Cat</option>
+      <option value="dog">Dog</option>
+      <option value="hamster">Hamster</option>
+      <option value="zebra">Zebra</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="bio">Biography</label>
+    <textarea id="bio" name="pet_bio"></textarea>
+
+    <label for="pet_owner_email">Owner's Email</label>
+    <input type="email" id="owner-email" name="pet_owner_email">
+
+    <button type="submit" id="new-pet-submit-button">Create new pet</button>
+
+    <button type="reset">Reset</button>
+
+
+  </form>
+  <br>
+  <br>
+
+
+  <div class="card">
+    <img class="card_image" src="images/desert.jpg" alt="Desert Sand Dunes">
+    <img class="avatar" src="images/person-avatar.jpg" alt="A picture of the poster's head">
+
+    <div class="title">
+      <strong>Title goes here</strong>
+    </div>
+
+    <div class="secondary_text">
+      Secondary text
+    </div>
+
+    <div class="body_text">
+      Greyhound divisively hello coldly wonderfully marginally far upon excluding.
+    </div>
+
+  </div>
+</body>
+
+</html>
