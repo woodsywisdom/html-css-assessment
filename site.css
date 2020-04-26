@@ -90,17 +90,15 @@ button {
 @media screen and (max-width: 600px) {
   form {
     width: auto;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
   label {
-    grid-column: 1/2;
-    justify-self: center;
+    align-self: center;
   }
 
-  input
-  textarea,
-  button {
-    grid-column: 1/2;
+  .card {
+    margin: 0 auto;
   }
 }
